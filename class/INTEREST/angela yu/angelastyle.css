@@ -1,0 +1,45 @@
+
+body
+{
+    text-align: center;
+    font-family: 'Joti One', cursive;
+    background-color: black;
+    color: aqua;
+}
+.scene
+{
+    width: 900px;
+    position: absolute;
+    left: 370px;
+    top: 445px;
+
+}
+.cloud1
+{
+    position: absolute;
+    width: 225px;
+    top: 270px;
+    left: 37.5px;
+}
+.cloud2
+{
+    position: absolute;
+    width: 225px;
+    right: 10px;
+    top: 270px;
+}
+.cloud3
+{
+    position: absolute;
+    width: 150px;
+    right: 170px;
+    top: 600px;
+}
+.cloud4
+{
+    position: absolute;
+    width: 150px;
+    left: 220px;
+    top: 650px;
+}
+

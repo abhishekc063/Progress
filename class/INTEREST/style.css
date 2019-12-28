@@ -1,0 +1,20 @@
+<style>
+
+            body    /*internal css ie. outside the body*/
+            {
+                background-color: #FFFCC1; 
+            }
+
+            hr
+            {
+                /*background-color: #EEEEEE; /*so everything in html is enclosed in a box even the horizontal line is inside a box so when we put background color white in horizontal rule the inside of box become white but the border of box does not become white so thus either we need to remove the border or make it white too so below i have removed the border and put the height of box as 2 pixel so that the line has some thickness*/
+                border-style: dotted none none none; /*border style dotted for top side and none for other border sides*/
+                border-width: 5px;
+                /*border-radius: 2px; for radius of dots*/ 
+                border-color: #CCCCCC;
+                height: 0px;
+                width: 80px;
+
+
+            }
+        </style>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>⚝STUDENTS⚝</title>
+<!--       <link rel="stylesheet" href="style.css">-->
+     <style>
+
+            body    /*internal css ie. outside the body*/
+            {
+                background-color: #FFFCC1; 
+            }
+
+            hr
+            {
+                /*background-color: #EEEEEE; /*so everything in html is enclosed in a box even the horizontal line is inside a box so when we put background color white in horizontal rule the inside of box become white but the border of box does not become white so thus either we need to remove the border or make it white too so below i have removed the border and put the height of box as 2 pixel so that the line has some thickness*/
+                border-style: dotted none none none; /*border style dotted for top side and none for other border sides*/
+                border-width: 5px;
+                /*border-radius: 2px; for radius of dots*/ 
+                border-color: #CCCCCC;
+                height: 0px;
+                width: 80px;
+
+
+            }
+         h1
+         { 
+                text-align: center;
+                 color: green;
+         }
+         table
+         {
+             text-align: center;
+         }
+         
+        </style>
+    
+
+    </head>
+
+    <body> <!--style="background-color: #FFFCC1;"    to provide inline css-->
+        <h1>DETAILS OF STUDENT</h1>
+        <hr>
+        <h2>No. of students</h2>
+        <h3>Name of all the students</h3>
+        <h4>Categorise the students</h4>
+        <h5>Assign them roll numbers according to alphabetical order</h5>
+        <h6>Noticing that text in the heading is becoming smaller and smaller</h6>
+
+        <br>
+        <hr>
+        <br>
+        <p>Anim excepteur fabulas, si nulla doctrina ab <strong>mandaremus</strong> summis multos ne  
+            <em>nescius</em> quo quem nescius, expetendis quo dolore, occaecat qui minim, illum 
+            <a href="http://www.fb.com" target="_blank">fabulas</a> ne duis nisi, fore consectetur admodum velit possumus. Ex veniam eram elit cernantur de ne eu irure nisi lorem hic elit tempor te laborum ne laborum 
+            an aute. Ab dolore dolor de eiusmod. Sunt est vidisse ea quis ex mentitum, id elit firmissimum, sunt appellat quo tractavissent.</p>
+        <br>
+        <hr>
+        <br>
+        <p>Ways to categorise students</p>
+        <ol>
+            <li>Based on Gender</li>
+            <li>Based on alphabetical order</li>
+            <li>Based on Marks</li>
+            <li>Based on physique</li>     
+        </ol>
+        <p>Giving details for above</p>
+        <ul>
+            <li>Gender- male, female, others</li>
+            <li>Alphabetical order from A to Z</li>
+            <li>Marks- below 35, below 50 ,below 70 and rest</li>
+            <li>Physique- height and weight</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <table align="center">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>GENDER</th>
+                    <th>MARKS(/100)</th>
+                    <th>HEIGHT(in cm)</th>   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abhishek</td>
+                    <td>Male</td>
+                    <td>48</td>
+                    <td>181</td>
+                </tr>
+                <tr>
+                    <td>Manish</td>
+                    <td>Male</td>
+                    <td>82</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>Richa</td>
+                    <td>Female</td>
+                    <td>64</td>
+                    <td>153</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <p>Enter Student details</p>
+        <br>
+        <form> 
+            <!-- action="process.php" method="post" if u include action attribute and method attribute nothing will happen as they interact towars database side-->
+            <div>
+                <label>First Name</label> 
+                <input type="text" placeholder="Enter First Name">
+                <!-- label just puts the text in an invisible box for padding purpose we can remove the label too--> <!--name="firstname" this is for server side to grab the values--> 
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter Last Name"> 
+                <!--name="lastname"--> 
+            </div>
+            <br>
+            <div>
+                <label>Father name</label>
+                <input type="text" placeholder="Enter Fasther's name"> 
+                <!--name="fathername"-->
+            </div>
+            <br>
+            <div>
+                <label>Mother name</label>
+                <input type="text"  placeholder="Enter Mother's Name"> 
+                <!--name="mothername"-->
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Type email">
+                <!--name="email"-->
+            </div>
+            <br>
+            <div>
+                <label>Message</label> 
+                <textarea></textarea>
+                <!--name="message"-->
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select><!-- name="grender"-->
+                    <option>male</option>
+                    <option>female</option>
+                    <option>other</option>
+                    <!--value="male/female/other" inside option tag--> <!-- to grab values on backend side-->
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>AGE</label>
+                <input type="number" value="30"><!-- name="age"-->
+            </div>
+            <br>
+            <div>
+                <label>BIRTHDAY:</label>
+                <input type="date"><!-- name="birthday"-->
+            </div>
+            <br>
+            <input type="submit"><!-- name="submit" value="submit"-->
+        </form>
+        <button>Click me</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <p>IMAGE FROM FORZA HORIZON 4 (to see full resolution click on image)</p>
+        <br>
+        <a href="yo.jpg" target="_blank">
+            <img src="yo.jpg" alt="my Forza Horizon 4 image" width="500"> 
+            <!--image sourse and if image can not be found then write alternate msg ie. my forza horizon image-->
+        </a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <blockquote> Anim laborum hic ingeniis, deserunt efflorescere quo possumus quo occaecat esse 
+            labore laboris veniam ad sed summis enim sed admodum. Lorem de ullamco sed 
+            irure, nostrud ut appellat qui aliqua illustriora offendit velit incurreret, eu 
+            fugiat sempiternum. Eiusmod fugiat enim de quis, esse proident et coniunctione. 
+            Est noster te fugiat. O velit aut quae an aut aliquip consectetur.</blockquote> <!--gives styling and centered text-->
+
+        <p><cite>Government just sold</cite> <abbr title="Bharat Petrolium Corporation Limited"> BPCL</abbr></p>
+
+
+    </body>
+</html>
